@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fil"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>PC Building Simulator – CSS</title>
+<link rel="stylesheet" href="style.css"></head><body>
+<header>
+<h1>🖥️ PC Building Simulator <span style="color:var(--mute);font-weight:400;font-size:.85rem">· CSS: Assembly &amp; Disassembly</span></h1>
+<div class="stats"><div class="stat">Score<b id="score">100</b></div><div class="stat">Hakbang<b id="steps">0</b></div><div class="stat">Oras<b id="time">0:00</b></div></div>
+</header>
+<div class="tabs" id="tabs"></div>
+<div class="grid">
+<div class="stagewrap">
+<div id="stage"></div>
+<div class="row" style="align-items:center;justify-content:space-between">
+<div class="row" style="margin:0;gap:14px">
+<label class="sw" id="esd"><input type="checkbox" id="strap"> 🧤 Anti-static wrist strap</label>
+<label class="sw"><input type="checkbox" id="lblT" checked> Ipakita ang pangalan</label>
+</div>
+<div class="row" style="margin:0"><button id="auto">▶ Auto</button><button id="reset">↺ Reset</button></div>
+</div>
+</div>
+<div class="side">
+<div class="box" id="info"><h3>📘 Impormasyon</h3><div class="nm">Pumili ng parte</div><p>I-click ang kahit anong parte ng PC para makita ang pangalan at gamit nito.</p></div>
+<div class="box"><h3>🧩 Progress <span id="pc" style="color:var(--mute)"></span></h3><div class="prog"><i id="bar"></i></div>
+<div class="chips" id="tray" style="margin-top:10px"></div></div>
+<div class="box"><h3>📝 Log</h3><div id="log"></div></div>
+</div></div>
+<div id="toast"></div>
+<script src="script.js"></script></body></html>
